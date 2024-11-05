@@ -9,7 +9,7 @@
     
     "support": "support@softhealer.com",
         
-    "version": "13.0.4",
+    "version": "15.0.1",  # التحديث إلى الإصدار 15
         
     "category": "Extra Tools",
 
@@ -53,52 +53,44 @@ invoice barcode mobile scanner
 bill barcode mobile scanner
 credit note barcode mobile scanner
 debit note barcode mobile scanner
-
     """,
     
     
     "depends": [
-                
-                "mrp", 
-                "stock",
-                "account",
-                "purchase",
-                "sale_management",
-                "base_setup",
-                "base",
-                "product",
-                "sh_product_qrcode_generator",
-            ],
+        "mrp", 
+        "stock",
+        "account",
+        "purchase",
+        "sale_management",
+        "base_setup",
+        "base",
+        "product",
+        "sh_product_qrcode_generator",
+    ],
     
     "data": [
-        
         "views/asset.xml",
-
         "sh_sale_barcode_mobile/views/res_config_settings_views.xml",
         "sh_sale_barcode_mobile/views/sale_view.xml",
- 
+
         "sh_purchase_barcode_mobile/views/res_config_settings_views.xml",
         "sh_purchase_barcode_mobile/views/purchase_view.xml",
- 
-            
+
         "sh_invoice_barcode_mobile/views/res_config_settings_views.xml",
         "sh_invoice_barcode_mobile/views/account_view.xml",                
-         
+
         "sh_bom_barcode_mobile/views/res_config_settings_views.xml",
         "sh_bom_barcode_mobile/views/mrp_view.xml",
-           
-               
+
         "sh_inventory_barcode_mobile/views/res_config_settings_views.xml",
         "sh_inventory_barcode_mobile/views/stock_view.xml",
-  
+
         "sh_inventory_adjustment_barcode_mobile/views/res_config_settings_views.xml",
         "sh_inventory_adjustment_barcode_mobile/views/stock_view.xml",
-                   
+
         "sh_product_barcode_mobile/security/product_bm_security.xml",     
         "sh_product_barcode_mobile/views/res_config_settings_views.xml",
-        "sh_product_barcode_mobile/wizard/sh_product_barcode_mobile_wizard.xml", 
-        
-        
+        "sh_product_barcode_mobile/wizard/sh_product_barcode_mobile_wizard.xml",   
     ],
     
     'qweb': [
@@ -108,7 +100,6 @@ debit note barcode mobile scanner
     "images": ["static/description/background.png", ],
     
     "installable": True,
-
     "application": True,
     "autoinstall": False,
     
